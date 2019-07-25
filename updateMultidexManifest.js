@@ -1,7 +1,8 @@
 module.exports = function (ctx) {
-    var fs = ctx.require('fs'),
-        path = ctx.require('path'),
-        xml = ctx.require('cordova-common').xmlHelpers;
+    console.info(JSON.stringify(ctx));
+    var fs = require('fs'),
+        path = require('path'),
+        xml = require('cordova-common').xmlHelpers;
 
     var manifestPath = path.join(ctx.opts.projectRoot, 'platforms/android/app/src/main/AndroidManifest.xml');
     var doc = xml.parseElementtreeSync(manifestPath);
