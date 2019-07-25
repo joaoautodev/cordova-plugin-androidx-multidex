@@ -1,5 +1,4 @@
 module.exports = function (ctx) {
-    console.info(JSON.stringify(ctx));
     var fs = require('fs'),
         path = require('path'),
         xml = require('cordova-common').xmlHelpers;
